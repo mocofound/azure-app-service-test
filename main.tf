@@ -1,5 +1,5 @@
 provider "azurerm" {
-    version = "~> 1.13.0"
+    version = "~> 1.31.0"
 }
 
 resource "azurerm_resource_group" "test" {
@@ -15,8 +15,8 @@ resource "azurerm_app_service_plan" "test" {
   #reserved            = true
 
   sku {
-    tier = "Standard"
-    size = "S1"
+    tier = "Isolated"
+    size = "I1"
     capacity = 1
   }
 }
