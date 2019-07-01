@@ -4,7 +4,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "test" {
   name     = "api-rg-isolated"
-  location = "East US"
+  location = "West US 2"
 }
 
 resource "azurerm_app_service_plan" "test" {
