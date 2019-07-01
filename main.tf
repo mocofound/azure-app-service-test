@@ -15,8 +15,8 @@ resource "azurerm_app_service_plan" "test" {
   #reserved            = true
 
   sku {
-    tier = "Isolated"
-    size = "I1"
+    tier = "Standard"
+    size = "S1"
     capacity = 1
   }
 }
